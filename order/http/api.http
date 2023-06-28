@@ -1,0 +1,30 @@
+### 라이더 배치
+POST http://localhost:8080
+Content-Type: application/json
+
+{
+  "storeId" : 1,
+  "userId" : 2,
+  "price" : 10000
+}
+
+### 결제 실패했을 경우
+POST http://localhost:8080
+Content-Type: application/json
+
+{
+  "storeId" : 1,
+  "userId" : 1,
+  "price" : 10000
+}
+
+### 실패에 대한 재처리 추가
+POST http://localhost:8080
+Content-Type: application/json
+
+{
+  "storeId" : 1,
+  "userId" : 2,
+  "price" : 10000
+}
+
